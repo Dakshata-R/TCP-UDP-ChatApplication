@@ -135,3 +135,17 @@ public class CRCChecksumValidate {
         }
     }
 }
+
+
+
+// OUTPUT:
+// Choose Algorithm:
+// 1. CRC
+// 2. Checksum
+// 1
+// Enter binary data: 1101
+// Enter divisor: 1011
+// Codeword (Data + CRC): 1101001
+// Simulate error? (y/n): n
+// Receiver: Data Accepted (No Error)
+

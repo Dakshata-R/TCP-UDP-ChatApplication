@@ -69,3 +69,35 @@ distance_vector_routing(graph, nodes)
 
 # Run Link State Routing
 link_state_routing(graph, nodes)
+
+
+
+# --- Distance Vector Routing Table ---
+# Router A distances: 0 1 3 4
+# Router B distances: 1 0 2 3
+# Router C distances: 3 2 0 1
+# Router D distances: 4 3 1 0
+
+# --- Link State Routing Table (from Router A) ---
+# Router A -> Router A = 0
+# Router A -> Router B = 1
+# Router A -> Router C = 3
+# Router A -> Router D = 4
+
+# --- Link State Routing Table (from Router B) ---
+# Router B -> Router A = 1
+# Router B -> Router B = 0
+# Router B -> Router C = 2
+# Router B -> Router D = 3
+
+# --- Link State Routing Table (from Router C) ---
+# Router C -> Router A = 3
+# Router C -> Router B = 2
+# Router C -> Router C = 0
+# Router C -> Router D = 1
+
+# --- Link State Routing Table (from Router D) ---
+# Router D -> Router A = 4
+# Router D -> Router B = 3
+# Router D -> Router C = 1
+# Router D -> Router D = 0
